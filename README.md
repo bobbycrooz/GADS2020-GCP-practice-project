@@ -4,15 +4,15 @@
 >Email:idrisloove@gmail.com
 >Task:translate lab into 100% command line
 
->     # All screenshoot are in the screenshoot [folder](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/tree/master/GADS%20Qwiklabs%20Completion%20Screenshoots)
+     # All screenshoot are in the screenshoot [folder](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/tree/master/GADS%20Qwiklabs%20Completion%20Screenshoots)
 
-#[project 1]()
+# [project 1]()
     ##project Title: Working with multiple VPC
 
-#Task 1. Create custom mode VPC networks with firewall rules
+# Task 1. Create custom mode VPC networks with firewall rules
 ----------------------------------------------------
 Create two custom networks, managementnet and privatenet, along with firewall rules to allow SSH, ICMP, and RDP ingress traffic.
-##1. Create the managementnet network
+## 1. Create the managementnet network
 
     >gcloud compute networks create managementnet --project=qwiklabs-gcp-01-e83552426f75 --subnet-mode=custom --bgp-routing-mode=regional
 
