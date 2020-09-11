@@ -1,15 +1,13 @@
-## GADS2020-GCP-practice-project
+Name:Idris Love
+Email:idrisloove@gmail.com
+Task:translate lab into 100% command line 
+project Title: Working with multiple VPC
 
->Name:Idris Love
->Email:idrisloove@gmail.com
->Task:translate lab into 100% command line
 
->     # All screenshoot are in the screenshoot [folder](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/tree/master/GADS%20Qwiklabs%20Completion%20Screenshoots)
 
-#[project 1]()
-    ##project Title: Working with multiple VPC
 
-#Task 1. Create custom mode VPC networks with firewall rules
+
+ #Task 1. Create custom mode VPC networks with firewall rules
 ----------------------------------------------------
 Create two custom networks, managementnet and privatenet, along with firewall rules to allow SSH, ICMP, and RDP ingress traffic.
 ##1. Create the managementnet network
@@ -37,7 +35,7 @@ to create privatenet network
 ##5. list sorted by network
 
     >gcloud compute networks subnets list --sort-by=NETWORK
---------------------------------------------------------------
+------------------------------------------------
 
 ##1. creating firewwall rule for managmentnet
 
@@ -65,118 +63,4 @@ to create privatenet network
 
 CONCLUSION:
 they all can connect with there internal iP adresses except for munet-eu-vm
-
-
-
-#[project 2.]()
-    ##project Title:Deploying Jobs on Kubernetes Engine
-
-
-CronJobs perform finite, time-related tasks that run once or repeatedly at a time that you specify using Job objects to complete their tasks.
-
-#Task 1. Define and deploy a Job manifest
--------------------------------
-
-##1. Create a Google Kubernetes Engine cluster, in the cloiud shell 
-        >export my_zone=us-central1-a
-        >export my_cluster=standard-cluster-1
-
-
-##2. Configure kubectl tab completion in Cloud Shell.
-        >source <(kubectl completion bash)
-
-##3. create a Kubernetes cluster.
-        >gcloud container clusters create $my_cluster --num-nodes 3  --enable-ip-alias --zone $my_zone
-##4. configure access to your cluster for the kubectl command-line tool, using the following command:
-        >gcloud container clusters get-credentials $my_cluster --zone $my_zone
-
-##5. clone the repository to the lab Cloud Shell.
-        >git clone https://github.com/GoogleCloudPlatformTraining/training-data-analyst
-
-##6. Change to the directory that contains the sample files for this lab.
-        >cd ~/training-data-analyst/courses/ak8s/07_Jobs_CronJobs
-
-#Task 2. Create and run a Job
-----------------------------
-
-1. To create a Job from this file, execute the following command:
-        >kubectl apply -f example-job.yaml
-
-
-2. To check the status of this Job, execute the following command:
-        >kubectl describe job example-job
-
-3. I view all Pod resources in your cluster, including Pods created by the Job which have completed, execute the following command:
-        >kubectl get pods
-
-
-output:
->apiVersion: batch/v1beta1
->kind: CronJob
->metadata:
->  name: hello
->spec:
->  schedule: "*/1 * * * *"
->  jobTemplate:
->    spec:
->      template:
->        spec:
->          containers:
->          - name: hello
->            image: busybox
->            args:
->            - /bin/sh
->            - -c
->            - date; echo "Hello, World!"
->          restartPolicy: OnFailure
-
-
-3. To delete all these jobs, execute the following command:
-        >kubectl delete cronjob hello
-
-4. To verify that the jobs were deleted, execute the following command:
-        >kubectl get jobs.
-
-output:
-        >No resources found.
-
-
-
-#[project 3]()
-##project Title: Getting started with Google Kubernetes Engine. 
-
-
-
-#Getting started with GKE 
----------------------------
-
-##1. in the cloud shell create enviroment variabke for zones
-        >export MY_ZONE = us-central1
-
-##2. Starting the Kubernetes Engine with cluster name webfronted1 and configre with 2 nodes
-        >gcloud container cluster create webfrontend -11zone $MY_ZONE --num-node
-
-
-##3. to check version:
-        >kubectl version
-
-##4. to run and deploy an an NGINX container
-        >kubectl create deploy nginx --image=nginx:1.177.10
-
-##5. to view the pods running the nginx container
-        >kubectl get pod 
-
-#Task 2. Exposing the nginx container to the internet
-        >kubectl expose deployment nginx --port 80-typeLoadBalancer
-
-
-##1. Get the new services
-        >kubectl get services
-
-
-##2. Scale up the number of pods
-        >kubectl scale deployment niginx --replicas=3 
-
->then i view the lunched service with then external IP of 104.198.72.53
-
 
