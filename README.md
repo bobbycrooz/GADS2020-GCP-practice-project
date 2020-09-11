@@ -9,13 +9,7 @@ Task:translate lab into 100% command line
 - [Lab translate project 3](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Getting%20Started%20With%20GKE.md)
 
 
- # [Lab translate project 1](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Working%20With%20Multiple%20VPC.md)
-
-## project Title: Getting started with Google Kubernetes Engine. 
-
-
-
-
+# [Lab translate project 1](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Working%20With%20Multiple%20VPC.md)
 ## project Title: Working with multiple VPC
 
 # Task 1. Create custom mode VPC networks with firewall rules
