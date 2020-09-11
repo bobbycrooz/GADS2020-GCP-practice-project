@@ -1,12 +1,15 @@
-## GADS2020-GCP-practice-project
+# GADS2020-GCP-practice-project
+Name:Idris Love
+Email:idrisloove@gmail.com
+Task:translate lab into 100% command line
 
-## Name:Idris Love
-## Email:idrisloove@gmail.com
-## Task:translate lab into 100% command line
+-[screenshoot](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/tree/master/GADS%20Qwiklabs%20Completion%20Screenshoots)
+- [Lab translate project 1](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Working%20With%20Multiple%20VPC.md)
+ - [Lab translate project 2.](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Delopying%20Jobs%20On%20GKE-Clusters.md)
+ -[Lab translate project 3](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Getting%20Started%20With%20GKE.md)
 
-# screenshoot [folder](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/tree/master/GADS%20Qwiklabs%20Completion%20Screenshoots)
 
-# [Lab translate project 1](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Working%20With%20Multiple%20VPC.md) # [Lab translate project 2.](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Delopying%20Jobs%20On%20GKE-Clusters.md) # [Lab translate project 3](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Getting%20Started%20With%20GKE.md)
+ # [Lab translate project 1](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Working%20With%20Multiple%20VPC.md)
 
 ## project Title: Getting started with Google Kubernetes Engine. 
 

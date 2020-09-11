@@ -1,6 +1,3 @@
-Name:Idris Love
-Email:idrisloove@gmail.com
-Task:translate lab into 100% command line 
 project Title: Working with multiple VPC
 
 

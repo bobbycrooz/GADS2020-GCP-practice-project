@@ -1,34 +1,32 @@
-#Name:Idris Love
-#Email:idrisloove@gmail.com
-#Task:translate lab into 100% command line 
-#project Title:Deploying Jobs on Kubernetes Engine
+ 
+# project Title:Deploying Jobs on Kubernetes Engine
 
 
 CronJobs perform finite, time-related tasks that run once or repeatedly at a time that you specify using Job objects to complete their tasks.
 
-#Task 1. Define and deploy a Job manifest
+# Task 1. Define and deploy a Job manifest
 -------------------------------
 
-##1. Create a Google Kubernetes Engine cluster, in the cloiud shell 
+## 1. Create a Google Kubernetes Engine cluster, in the cloiud shell 
         >export my_zone=us-central1-a
         >export my_cluster=standard-cluster-1
 
 
-##2. Configure kubectl tab completion in Cloud Shell.
+## 2. Configure kubectl tab completion in Cloud Shell.
         >source <(kubectl completion bash)
 
-##3. create a Kubernetes cluster.
+## 3. create a Kubernetes cluster.
         >gcloud container clusters create $my_cluster --num-nodes 3  --enable-ip-alias --zone $my_zone
-##4. configure access to your cluster for the kubectl command-line tool, using the following command:
+## 4. configure access to your cluster for the kubectl command-line tool, using the following command:
         >gcloud container clusters get-credentials $my_cluster --zone $my_zone
 
-##5. clone the repository to the lab Cloud Shell.
+## 5. clone the repository to the lab Cloud Shell.
         >git clone https://github.com/GoogleCloudPlatformTraining/training-data-analyst
 
-##6. Change to the directory that contains the sample files for this lab.
+## 6. Change to the directory that contains the sample files for this lab.
         >cd ~/training-data-analyst/courses/ak8s/07_Jobs_CronJobs
 
-#Task 2. Create and run a Job
+# Task 2. Create and run a Job
 ----------------------------
 
 1. To create a Job from this file, execute the following command:
