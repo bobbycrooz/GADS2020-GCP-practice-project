@@ -146,7 +146,7 @@ output:
 
 
 
-# [project 3](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Getting%20Started%20With%20GKE.md)
+# [Lab translate project 3](https://github.com/bobbycrooz/GADS2020-GCP-practice-project/blob/master/Getting%20Started%20With%20GKE.md)
 
 ## project Title: Getting started with Google Kubernetes Engine. 
 
